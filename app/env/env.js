@@ -14,6 +14,8 @@ var Env = {
         app.use(express.static('./public'));
         app.listen(CONS.port, function() {
             console.log('Port running on: ' + CONS.port)
+        }, function(err) {
+            console.log('Error:', err);
         });
     }
 };
